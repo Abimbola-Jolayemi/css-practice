@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Stutern</h1>
+    <div id="master-div-stye">
+        <p class="about">Tell us something positive that happened to you today</p>
+
+        <form action="/action" method="post">
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="name" id="name-label">Name</label>
+                </div>
+                <div class="fields">
+                    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+
+            </div>
+
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="name" id="name-label">Email</label>
+                </div>
+                <div class="fields">
+                    <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+            </div>
+
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="number" id="name-label">On a scale of 1-10,how good was it?</label>
+                </div>
+                <div class="fields">
+                    <input type="text" name="name" id="name" placeholder="Enter a number between 1 and 10" required>
+                </div>
+
+            </div>
+
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="dropdown" id="dropdown-label">Where did it happen?</label>
+                </div>
+                <div class="fields">
+                    <select name="location" id="dropdown" class="dropdown">
+                        <option value="home">Home</option>
+                        <option value="School">School</option>
+                        <option value="Workplace">Workplace</option>
+                        <option value="mall">At the mall</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="radio" id="radio-label">At what time of the day did it happen?</label>
+                </div>
+                <div class="fields">
+                    <ul style="list-style: none;">
+                        <li class="radio">
+                            <label>
+                                Morning
+                                <input type="radio" name="time-radio" class="user-selection"
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Afternoon
+                                <input type="radio" name="time-radio" class="user-selection"
+                            </label>
+                        </li>
+                        <li class="radio">
+                            <label>
+                                Evening
+                                <input type="radio" name="time-radio" class="user-selection"
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="checkbox" id="checkbox-label">
+                        what emotions did you experience?
+                        <br/>
+                        (Select all that apply)
+                    </label>
+                </div>
+                <div class="fields">
+                    <ul>
+                        <li>
+                            <label>
+                                Elated
+                                <input type="checkbox" name="time-radio" class="user-selection"
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Loved
+                                <input type="checkbox" name="time-radio" class="user-selection"
+                            </label>
+                        </li>
+                        <li>
+                            <label>
+                                Enthusiastic
+                                <input type="checkbox" name="time-radio" class="user-selection"
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="form-rows">
+                <div class="labels">
+                    <label for="textarea" id="textarea-label">Please describe your positive experience</label>
+                </div>
+                <div class="fields">
+                <textarea class="input-fields" style="height: 50px; resize:vertical" col="30" rows="20" placeholder="Descibe your experence">
+                </textarea>
+                </div>
+    
+            </div>
+
+            
+            <button class="button" id="submit" type="submit">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
